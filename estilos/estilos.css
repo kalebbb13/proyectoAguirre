@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100;300&family=Ubuntu&display=swap');
+
+
+
+
+*{
+    padding: 1px;
+    margin: 1px;
+}
+
+ul ol{
+    list-style-type: none;
+}
+
+
+header{
+    background-color: aliceblue;
+    font-size: 20px;
+    text-align: right;
+}
+
+
+body{
+    background-image: url("../img/fondo.png");
+}
+
+
+
+h1{
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: left;  
+}
+
+
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline black;
+
+}
+
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+h5{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+footer{
+    background-color: aliceblue;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid black
+}
+
+
+nav ul li {
+    display: inline-block;
+}
+
+
+img, .clientes{
+    margin-top: 80px;
+}
+
+
+.fotosContainerInicio{
+    display: flex;
+    justify-content: left;
+}
+
+.fotosContainerAll{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.fotos{
+    width: 200%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+
+.rosa, .negro, .gris{
+    width: 300px;
+    height: 300px;
+}
+
+.contactoMotivo{
+    font-size: 20px;
+}
+
+#nombreLentes{
+    text-align: center;
+}
+
+.mayus{
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.infoInicio{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+form, .textoDevoluciones{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+.bolder{
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: underline black;
+}
+
+
+#grillaIndex{
+    display: grid;
+    grid-template-areas:
+    "header     header    header"
+    "nav        nav       nav"
+    "contenido  contenido contenido"
+    "fotos      fotos     fotos"
+    "infoabajo  infoabajo infoabajo"
+    "footer     footer    footer";
+
+}
+
+
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+
+.fotosContainerInicio{
+    grid-area: fotos;
+}
+
+
+footer{
+    grid-area: footer
+}
+
+
+#contenido{
+    grid-area: contenido;
+}
+
+
+#infoabajo{
+    grid-area: infoabajo;
+}
+
+
+#grillaProductos{
+    display: grid;
+    grid-template-areas:
+    "header     header    header"
+    "nav        nav       nav"
+    "contenido  contenido contenido"
+    "fotos      fotos     fotos"
+    "footer     footer    footer";
+}
+
+
+@media (max-width: 480px){
+    #grillaIndex{
+        display: grid;
+        grid-template-areas:
+        "header     "
+        "nav        "
+        "contenido  "
+        "fotos      "
+        "infoabajo  "
+        "footer     ";
+    }
+
+    h2{
+        color: blueviolet;
+    }
+}
