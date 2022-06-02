@@ -29,6 +29,9 @@ body{
 
 
 h1{
+    animation-duration: 0.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
     font-family: 'Playfair Display', serif;
     color: black;
     font-weight: normal;
@@ -38,7 +41,19 @@ h1{
 
 
 
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 h2{
+    animation-duration: 0.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
     font-family: 'Playfair Display', serif;
     font-weight: normal;
     margin-top: 20px;
@@ -49,8 +64,13 @@ h2{
 
 }
 
+h2:hover{
+    transform: scale(1.1);
+}
+
 
 h3{
+    
     font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: normal;
@@ -59,6 +79,7 @@ h3{
 
 
 h4{
+    
     font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: normal;
@@ -67,6 +88,9 @@ h4{
 
 
 h5{
+    animation-duration: 0.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
     font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: normal;
@@ -111,6 +135,9 @@ img, .clientes{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 }
 
 
@@ -118,6 +145,8 @@ img, .clientes{
     width: 300px;
     height: 300px;
 }
+
+
 
 .contactoMotivo{
     font-size: 20px;
