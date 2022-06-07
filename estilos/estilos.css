@@ -28,7 +28,7 @@ body{
 
 
 
-h1{
+h1, .navbar-brand{
     animation-duration: 0.5s;
     animation-name: aparecer;
     animation-iteration-count: 1;
@@ -38,7 +38,6 @@ h1{
     font-size: 36px;
     text-align: left;  
 }
-
 
 
 @keyframes aparecer {
@@ -112,7 +111,7 @@ nav ul li {
 }
 
 
-img, .clientes{
+img, .clientes, .experienciasCards{
     margin-top: 80px;
 }
 
@@ -125,8 +124,6 @@ img, .clientes{
 .fotosContainerAll{
     display: flex;
     justify-content: center;
-    
-    
 }
 
 
@@ -253,4 +250,16 @@ footer{
     h2{
         color: blueviolet;
     }
+}
+
+
+
+.experienciasCards{
+    animation-duration: 0.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
 }
