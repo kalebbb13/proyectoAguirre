@@ -250,8 +250,13 @@ footer{
     h2{
         color: blueviolet;
     }
+
+    .navbar-brand{
+        font-size: 30px;
+    }
 }
 
+    
 
 
 .experienciasCards{
