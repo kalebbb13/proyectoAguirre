@@ -34,41 +34,60 @@
     <main>
         <h2>Contactate con nosotros</h2> 
         
+    <div class="container">
+      <div class="p-4">
         <form>
-            <label for="nombre_apellido">Ingrese nombre y apellido:</label>
-            <input type="text" name="nombre_apellido"/> <br>
-    
-            <label for="dni">Ingrese DNI:</label>
-            <input type="number" name="dni"/> <br>
-    
-            <label for="pedido">Ingrese numero de pedido:</label>
-            <input type="number" name="pedido"/> <br>
-    
-            <div>Efectivo</div>
-            <input type="radio" name="pago" value="efectivo" />
-            <div>Transferencia</div>
-            <input type="radio" name="pago" value="transferencia" />
-            <div>Mercado Pago</div>
-            <input type="radio" name="pago" value="mercadopago" /><br>
-            
-    
-            <h6 class="contactoMotivo"> Seleccione el motivo por el que nos contacta: </h6>
-
-            <select name="Problema">
-                <option value="falla">Falla de fabrica</option>
-                <option value="no_me_gusto">No me gusto</option>
-                <option value="no_era_lo_que_esperaba">No era lo que esperaba</option>
-                <option value="problema_envio">Problema con el envio</option>
-                <option value="ninguna">Ninguna de las anteriores</option>
-            </select><br><br>        
-    
-            <input type="submit" value="Enviar formulario"/>
-            <input type="reset" value="Limpiar formulario">
-            <input type="button" value="Sin acciones"><br>
-    
-    
-        
+          <div class="row mb-3">
+            <div class="col">
+              <label for="first-name" class="form-label">Nombre</label>
+              <input
+                class="form-control"
+                type="text"
+                id="first-name"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="last-name" class="form-label">Apellido</label>
+              <input class="form-control" type="text" id="last-name" required />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="email" class="form-label">Email</label>
+              <input class="form-control" type="email" id="email" required />
+            </div>
+            <div class="col">
+              <label for="phone" class="form-label"> Num. Celular</label>
+              <input class="form-control" type="tel" id="phone" />
+              <div id="phone-help" class="form-text">Opcional</div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <label for="subject" class="form-label">Motivo del contacto</label>
+              <input class="form-control" type="text" id="subject" required />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                rows="4"
+                id="message"
+                required
+              ></textarea>
+              <div id="message-help" class="form-text">Max. 500 caracteres</div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
         </form>
+      </div>
+    </div>
+
     </main>
     
 

@@ -247,8 +247,10 @@ footer{
         "footer     ";
     }
 
-    h2{
-        color: blueviolet;
+
+    .fotos{
+        display: flex;
+        justify-content: center;
     }
 
     .navbar-brand{
