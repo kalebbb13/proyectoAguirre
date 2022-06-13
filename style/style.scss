@@ -2,17 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100;300&family=Ubuntu&display=swap');
 
-
-
-
-*{
-    padding: 1px;
-    margin: 1px;
-}
-
-ul ol{
-    list-style-type: none;
-}
+@import "generales";
+@import "titulos";
 
 
 header{
@@ -28,7 +19,7 @@ body{
 
 
 
-h1, .navbar-brand{
+.navbar-brand{
     animation-duration: 0.5s;
     animation-name: aparecer;
     animation-iteration-count: 1;
@@ -49,53 +40,7 @@ h1, .navbar-brand{
     }
 }
 
-h2{
-    animation-duration: 0.5s;
-    animation-name: aparecer;
-    animation-iteration-count: 1;
-    font-family: 'Playfair Display', serif;
-    font-weight: normal;
-    margin-top: 20px;
-    margin-left: 20px;
-    text-align: center;
-    font-size: 30px;
-    text-decoration: underline black;
 
-}
-
-h2:hover{
-    transform: scale(1.1);
-}
-
-
-h3{
-    
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-weight: normal;
-    font-size: 18px;
-}
-
-
-h4{
-    
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-weight: normal;
-    font-size: 18px;
-}
-
-
-h5{
-    animation-duration: 0.5s;
-    animation-name: aparecer;
-    animation-iteration-count: 1;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-weight: normal;
-    font-size: 18px;
-    text-align: center;
-}
 
 
 footer{
@@ -105,10 +50,6 @@ footer{
     border: 1px solid black
 }
 
-
-nav ul li {
-    display: inline-block;
-}
 
 
 img, .clientes, .experienciasCards{
@@ -210,7 +151,7 @@ nav{
 
 
 footer{
-    grid-area: footer
+    grid-area: footer;
 }
 
 

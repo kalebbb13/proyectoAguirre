@@ -1,0 +1,49 @@
+h1{
+    animation-duration: 0.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: left;  
+}
+
+
+h2{
+    animation-duration: 0.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline black;
+    &:hover{
+        transform: scale(1.1);
+    }
+
+}
+
+h3, h4{
+    
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+
+h5{
+    animation-duration: 0.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+}
