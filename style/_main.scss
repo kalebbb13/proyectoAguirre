@@ -1,0 +1,41 @@
+.fotosContainerInicio, .fotosContainerAll{
+    display: flex;
+    justify-content: left;
+    .fotos{
+        width: 200%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        animation-duration: 1s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+        .rosa, .negro, .gris{
+            width: 300px;
+            height: 300px;
+        }
+        #nombreLentes{
+            text-align: center;
+        }
+    }
+}
+
+#infoabajo{
+    .mayus{
+        margin-top: 100px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .infoInicio{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+footer{
+    background-color: aliceblue;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid black
+}

@@ -6,6 +6,12 @@
   margin: 1px;
 }
 
+header {
+  background-color: aliceblue;
+  font-size: 20px;
+  text-align: right;
+}
+
 ul ol {
   list-style-type: none;
 }
@@ -71,10 +77,57 @@ h5 {
   text-align: center;
 }
 
-header {
-  background-color: aliceblue;
+.fotosContainerInicio, .fotosContainerAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.fotosContainerInicio .fotos, .fotosContainerAll .fotos {
+  width: 200%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 100px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.fotosContainerInicio .fotos .rosa, .fotosContainerInicio .fotos .negro, .fotosContainerInicio .fotos .gris, .fotosContainerAll .fotos .rosa, .fotosContainerAll .fotos .negro, .fotosContainerAll .fotos .gris {
+  width: 300px;
+  height: 300px;
+}
+
+.fotosContainerInicio .fotos #nombreLentes, .fotosContainerAll .fotos #nombreLentes {
+  text-align: center;
+}
+
+#infoabajo .mayus {
+  margin-top: 100px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#infoabajo .infoInicio {
   font-size: 20px;
-  text-align: right;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: aliceblue;
+  margin: 1px;
+  padding: 1px;
+  border: 1px solid black;
 }
 
 body {
@@ -113,74 +166,12 @@ body {
   }
 }
 
-footer {
-  background-color: aliceblue;
-  margin: 1px;
-  padding: 1px;
-  border: 1px solid black;
-}
-
 img, .clientes, .experienciasCards {
   margin-top: 80px;
 }
 
-.fotosContainerInicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-.fotosContainerAll {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.fotos {
-  width: 200%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 100px;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-name: aparecer;
-          animation-name: aparecer;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.rosa, .negro, .gris {
-  width: 300px;
-  height: 300px;
-}
-
 .contactoMotivo {
   font-size: 20px;
-}
-
-#nombreLentes {
-  text-align: center;
-}
-
-.mayus {
-  margin-top: 100px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.infoInicio {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 form, .textoDevoluciones {
