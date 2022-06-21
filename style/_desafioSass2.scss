@@ -1,0 +1,22 @@
+$redes: (
+    tiktok: violet,
+    instagram: #c25e30,
+);
+
+@each $social, $color in $redes {
+    .btn--#{$social}{
+        background-color: $color;
+    }
+    
+}
+
+
+@mixin flex-center{
+	display: flex;
+    justify-content: center;
+}
+
+
+.redesSociales{
+    @include flex-center;
+}

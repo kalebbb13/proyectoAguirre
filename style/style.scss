@@ -5,6 +5,7 @@
 @import "generales";
 @import "titulos";
 @import "main";
+@import "desafioSass2";
 
 
 body{
@@ -12,15 +13,28 @@ body{
 }
 
 
-.navbar-brand{
+.animacion{
     animation-duration: 0.5s;
     animation-name: aparecer;
     animation-iteration-count: 1;
+}
+
+.navbar-brand{
+    @extend .animacion;
     font-family: 'Playfair Display', serif;
     color: black;
     font-weight: normal;
     font-size: 36px;
     text-align: left;  
+}
+
+
+.experienciasCards{
+    @extend .animacion;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
 }
 
 
@@ -33,7 +47,11 @@ body{
     }
 }
 
-
+.bolder{
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: underline black;
+}
 
 img, .clientes, .experienciasCards{
     margin-top: 80px;
@@ -52,11 +70,7 @@ form, .textoDevoluciones{
 }
 
 
-.bolder{
-    font-weight: bolder;
-    font-size: 20px;
-    text-decoration: underline black;
-}
+
 
 
 #grillaIndex{
@@ -137,12 +151,5 @@ footer{
 
     
 
-.experienciasCards{
-    animation-duration: 0.5s;
-    animation-name: aparecer;
-    animation-iteration-count: 1;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 80px;
-    flex-wrap: wrap;
-}
+
+

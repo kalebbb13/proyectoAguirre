@@ -21,12 +21,6 @@ nav ul li {
 }
 
 h1 {
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-name: aparecer;
-          animation-name: aparecer;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
   font-family: 'Playfair Display', serif;
   color: black;
   font-weight: normal;
@@ -35,20 +29,12 @@ h1 {
 }
 
 h2 {
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-name: aparecer;
-          animation-name: aparecer;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
   font-family: 'Playfair Display', serif;
   font-weight: normal;
   margin-top: 20px;
   margin-left: 20px;
   text-align: center;
   font-size: 30px;
-  -webkit-text-decoration: underline black;
-          text-decoration: underline black;
 }
 
 h2:hover {
@@ -64,12 +50,6 @@ h3, h4 {
 }
 
 h5 {
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-name: aparecer;
-          animation-name: aparecer;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
   font-family: 'Poppins', sans-serif;
   color: black;
   font-weight: normal;
@@ -125,22 +105,54 @@ footer {
   border: 1px solid black;
 }
 
+.btn--tiktok {
+  background-color: violet;
+}
+
+.btn--instagram {
+  background-color: #c25e30;
+}
+
+.redesSociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body {
   background-image: url("../img/fondo.png");
 }
 
-.navbar-brand {
+.animacion, h1, h2, h5, .navbar-brand, .experienciasCards {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+}
+
+.navbar-brand {
   font-family: 'Playfair Display', serif;
   color: black;
   font-weight: normal;
   font-size: 36px;
   text-align: left;
+}
+
+.experienciasCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @-webkit-keyframes aparecer {
@@ -161,6 +173,13 @@ body {
   }
 }
 
+.bolder {
+  font-weight: bolder;
+  font-size: 20px;
+  -webkit-text-decoration: underline black;
+          text-decoration: underline black;
+}
+
 img, .clientes, .experienciasCards {
   margin-top: 80px;
 }
@@ -174,22 +193,10 @@ form, .textoDevoluciones {
   margin-bottom: 80px;
 }
 
-.bolder {
-  font-weight: bolder;
-  font-size: 20px;
-  -webkit-text-decoration: underline black;
-          text-decoration: underline black;
-}
-
 #grillaIndex {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header     header    header"
- "nav        nav       nav"
- "contenido  contenido contenido"
- "fotos      fotos     fotos"
- "infoabajo  infoabajo infoabajo"
- "footer     footer    footer";
+      grid-template-areas: "header     header    header" "nav        nav       nav" "contenido  contenido contenido" "fotos      fotos     fotos" "infoabajo  infoabajo infoabajo" "footer     footer    footer";
 }
 
 header {
@@ -237,23 +244,14 @@ footer {
 #grillaProductos {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header     header    header"
- "nav        nav       nav"
- "contenido  contenido contenido"
- "fotos      fotos     fotos"
- "footer     footer    footer";
+      grid-template-areas: "header     header    header" "nav        nav       nav" "contenido  contenido contenido" "fotos      fotos     fotos" "footer     footer    footer";
 }
 
 @media (max-width: 480px) {
   #grillaIndex {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header     "
- "nav        "
- "contenido  "
- "fotos      "
- "infoabajo  "
- "footer     ";
+        grid-template-areas: "header     " "nav        " "contenido  " "fotos      " "infoabajo  " "footer     ";
   }
   .fotos {
     display: -webkit-box;
@@ -266,23 +264,5 @@ footer {
   .navbar-brand {
     font-size: 30px;
   }
-}
-
-.experienciasCards {
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-name: aparecer;
-          animation-name: aparecer;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-bottom: 80px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */
