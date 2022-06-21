@@ -102,11 +102,6 @@ h5 {
           animation-iteration-count: 1;
 }
 
-.fotosContainerInicio .fotos .rosa, .fotosContainerInicio .fotos .negro, .fotosContainerInicio .fotos .gris, .fotosContainerAll .fotos .rosa, .fotosContainerAll .fotos .negro, .fotosContainerAll .fotos .gris {
-  width: 300px;
-  height: 300px;
-}
-
 .fotosContainerInicio .fotos #nombreLentes, .fotosContainerAll .fotos #nombreLentes {
   text-align: center;
 }
@@ -189,7 +184,12 @@ form, .textoDevoluciones {
 #grillaIndex {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header     header    header" "nav        nav       nav" "contenido  contenido contenido" "fotos      fotos     fotos" "infoabajo  infoabajo infoabajo" "footer     footer    footer";
+      grid-template-areas: "header     header    header"
+ "nav        nav       nav"
+ "contenido  contenido contenido"
+ "fotos      fotos     fotos"
+ "infoabajo  infoabajo infoabajo"
+ "footer     footer    footer";
 }
 
 header {
@@ -237,14 +237,23 @@ footer {
 #grillaProductos {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header     header    header" "nav        nav       nav" "contenido  contenido contenido" "fotos      fotos     fotos" "footer     footer    footer";
+      grid-template-areas: "header     header    header"
+ "nav        nav       nav"
+ "contenido  contenido contenido"
+ "fotos      fotos     fotos"
+ "footer     footer    footer";
 }
 
 @media (max-width: 480px) {
   #grillaIndex {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header     " "nav        " "contenido  " "fotos      " "infoabajo  " "footer     ";
+        grid-template-areas: "header     "
+ "nav        "
+ "contenido  "
+ "fotos      "
+ "infoabajo  "
+ "footer     ";
   }
   .fotos {
     display: -webkit-box;
