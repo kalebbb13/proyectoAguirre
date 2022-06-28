@@ -5,12 +5,6 @@
 @import "generales";
 @import "titulos";
 @import "main";
-@import "desafioSass2";
-
-
-body{
-    background-image: url("../img/fondo.png");
-}
 
 
 .animacion{
@@ -26,6 +20,10 @@ body{
     font-weight: normal;
     font-size: 36px;
     text-align: left;  
+}
+
+.navbar-nav{
+    font-family: 'Poppins', serif;
 }
 
 
@@ -127,6 +125,7 @@ footer{
 }
 
 
+
 @media (max-width: 480px){
     #grillaIndex{
         display: grid;
@@ -137,11 +136,6 @@ footer{
         "fotos      "
         "infoabajo  "
         "footer     ";
-    }
-
-    .fotos{
-        display: flex;
-        justify-content: center;
     }
 
     .navbar-brand{

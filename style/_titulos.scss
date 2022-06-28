@@ -12,8 +12,7 @@ h2{
     @extend .animacion;
     font-family: 'Playfair Display', serif;
     font-weight: normal;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 40px;
     text-align: center;
     font-size: 30px;
     &:hover{
@@ -32,11 +31,12 @@ h3, h4{
 
 
 
-h5{
+.textoLink{
     @extend .animacion;
     font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: normal;
     font-size: 18px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }

@@ -1,9 +1,11 @@
 .fotosContainerInicio, .fotosContainerAll{
     display: flex;
     justify-content: left;
+    align-items: center;
     .fotos{
         width: 200%;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 100px;
         animation-duration: 1s;
@@ -17,7 +19,7 @@
 
 #infoabajo{
     .mayus{
-        margin-top: 100px;
+        margin-top: 5px;
         font-size: 30px;
         text-align: center;
     }
