@@ -1,34 +1,18 @@
-h1{
-    @extend .animacion;
-    font-family: 'Playfair Display', serif;
-    color: black;
-    font-weight: normal;
-    font-size: 36px;
-    text-align: left;  
-}
-
-
 h2{
     @extend .animacion;
     font-family: 'Playfair Display', serif;
     font-weight: normal;
     margin-top: 40px;
     text-align: center;
-    font-size: 30px;
-    &:hover{
-        transform: scale(1.1);
-    }
-
+    font-size: 35px;
 }
 
 h3, h4{
-    
     font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: normal;
     font-size: 18px;
 }
-
 
 
 .textoLink{
